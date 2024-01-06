@@ -1,0 +1,33 @@
+{
+  "required": true,
+  "package": "com.nobtgRealSword.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "real_sword.refmap.json",
+  "priority": 2147483647,
+  "mixinPriority": 2147483647,
+  "mixins": [
+    "EntityMixin",
+    "MinecraftServerMixin",
+    "PersistentEntitySectionManagerMixin",
+    "PlayerListMixin",
+    "PlayerMixin",
+    "ServerLevelMixin",
+    "health.LivingEntityMixin",
+    "health.ServerPlayerMixin"
+  ],
+  "client": [
+    "MainMixin",
+    "MinecraftMixin",
+    "MouseHandlerMixin",
+    "health.LocalPlayerMixin",
+    "renderer.DeathScreenMixin",
+    "renderer.EntityRenderDispatcherMixin",
+    "renderer.GameRendererMixin",
+    "renderer.LivingEntityRendererMixin"
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
